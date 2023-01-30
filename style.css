@@ -1,0 +1,131 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800 */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(150, 100%, 66%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 560px;
+  background: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 3rem;
+}
+
+.heading {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.advice {
+  font-size: 28px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.dice {
+  background: hsl(150, 100%, 66%);
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  cursor: pointer;
+}
+
+.dice:hover {
+  box-shadow: 0 0 15px 5px hsl(150, 100%, 66%);
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  40%,
+  60% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+}
+
+picture {
+  margin: 2rem 0 3rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+  }
+}

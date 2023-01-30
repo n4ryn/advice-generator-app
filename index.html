@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="heading">Advice #<span id="advice-id">0</span></div>
+      <div class="advice" id="advice">"Press the dice to get an adivce"</div>
+      <picture>
+        <source
+          media="(max-width: 700px )"
+          srcset="images/pattern-divider-mobile.svg"
+        />
+        <img
+          src="images/pattern-divider-desktop.svg"
+          alt="pattern-divider-desktop  "
+        />
+      </picture>
+      <button class="dice" id="dice">
+        <img src="./images/icon-dice.svg" alt="dice-icon" />
+      </button>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.github.com/n4ryn">n4ryn</a>.
+    </footer>
+  </body>
+</html>
